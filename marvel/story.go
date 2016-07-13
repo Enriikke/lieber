@@ -9,6 +9,8 @@ const storyPath = "/v1/public/stories"
 
 // Story represents an indivisible, reusable components of comics.
 type Story struct {
+	Title       string `json:"title"`
+	Description string `json:"description"`
 }
 
 // StoryList uses the Marvel API to return a slice of Story structs.
